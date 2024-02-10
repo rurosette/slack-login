@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #ffe6c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  width: 75%;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.wrapper .container {
+  display: flex;
+}
+.wrapper .container .image {
+  width: 70%;
+  height: 100%;
+  border-radius: 20px;
+}
+.wrapper .container .image img {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.wrapper .container .right {
+  height: 100%;
+  position: relative;
+  left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .container .right .login {
+  width: 250px;
+}
+.wrapper .container .right .login .logo img {
+  width: 36px;
+  position: relative;
+  top: -20px;
+}
+
+.wrapper .container .right .login .field p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 500;
+  color: #525252;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+.wrapper .container .right .login .field p:nth-child(2) {
+  font-size: 8px;
+  font-weight: 350;
+  color: #525252;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.wrapper .container .right .login .field .google {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid #52525257;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.wrapper .container .right .login .field .or {
+  color: #a1a1a1;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 7px;
+}
+.wrapper .container .right .login .field .or span {
+  color: #dddddd;
+}
+.wrapper .container .right .login .field .input {
+  margin-bottom: 7px;
+}
+.wrapper .container .right .login .field .input label {
+  font-size: 10px;
+}
+.wrapper .container .right .login .field .input input::placeholder {
+  font-size: 10px;
+}
+.wrapper .container .right .login .field .input input {
+  padding: 6px;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid #52525257;
+  outline: none;
+}
+
+.wrapper .container .right .login .field .forget {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 8px;
+}
+.wrapper .container .right .login .field .forget .remember {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .container .right .login .field .forget .remember span {
+  color: #525252;
+}
+.wrapper .container .right .login .field .forget .for {
+  padding: 13px, 10px, 12px, 10px;
+  gap: 13px;
+  color: #7f265b;
+  font-weight: 700;
+}
+.wrapper .container .right .login .field button {
+  width: 100%;
+  background-color: #7f265b;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 15px;
+}
+.remember {
+  display: flex;
+  align-items: center;
+}
+
+.remember input[type="checkbox"] {
+  appearance: none;
+  border: 1px solid #7f265b;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.remember input[type="checkbox"]:checked {
+  background-color: #7f265b;
+  border-color: #7f265b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.remember input[type="checkbox"]:checked::before {
+  content: "\2713";
+  width: 12px;
+  height: 12px;
+  color: #ffffff;
+  font-size: 10px;
+  position: relative;
+  top: -2px;
+  left: 1px;
+}
+.remember span {
+  color: #333;
+}
+.input label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #828282;
+}
+.create {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 60px;
+}
+.create_cont {
+  width: 72%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.create p {
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.create span {
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  color: #7f265b;
+}
+
+/*Responsiveness*/
+
+@media screen and (max-width: 767px) {
+  .container {
+    height: 80vh;
+    overflow: hidden;
+    width: 100vw;
+  }
+  .right {
+    margin-left: -20px;
+  }
+
+  .wrapper .container .image {
+    background-color: #7f265b;
+    width: 0vw;
+  }
+  .wrapper .container .image img {
+    display: none;
+    width: 0vw;
+  }
+  .wrapper .container .right .login .logo {
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .right {
+    margin-left: -10px;
+    width: 60vw;
+  }
+}
